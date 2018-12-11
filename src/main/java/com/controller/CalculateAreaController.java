@@ -20,7 +20,7 @@ public class CalculateAreaController {
     @Autowired
     private CalculateArea calculateAreaService;
 
-    @RequestMapping(value = "/circle/{radius}", method = RequestMethod.GET)
+    @RequestMapping(value = "/circle/{Radius}", method = RequestMethod.GET)
     public ResponseEntity<Result> getCircleArea(@PathVariable("Radius") float radius) {
         Result result = null;
         try {

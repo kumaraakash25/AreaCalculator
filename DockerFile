@@ -14,7 +14,7 @@ EXPOSE 8080
 ARG JAR_FILE=build/libs/area-calculator.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} websocket-demo.jar
+ADD ${JAR_FILE} area-calculator.jar
 
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/websocket-demo.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/area-calculator.jar"]
